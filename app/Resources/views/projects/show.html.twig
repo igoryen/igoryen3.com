@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Project {{ name }} {% endblock %}
+
+{% block body %}
+<h1>Project {{ name }}</h1>
+
+<ul>
+    {% for pr in projects %}
+        <li>{{ pr }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
