@@ -24,11 +24,16 @@ class HomeController extends Controller
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function showAction() {
-        $home = [
-            'Website under construction by Igoryen'
+        $message = 'Website under construction by Igoryen';
+        $pointer = 'Some of my projects:';
+        $links = [
+            'tarboz' => 'http://tarboz.igoryen.com/',
+            'maximovich' => 'http://maximovich.igoryen.com/'
         ];
         return $this->render('home/show.html.twig', [
-           'home' => $home
+            'message' => $message,
+            'pointer' => $pointer,
+            'links' => $links
         ]);
     }
 
