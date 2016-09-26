@@ -28,8 +28,13 @@ class ContactController extends Controller
             'igor.yentaltsev@gmail.com',
             '647-703-6200'
         ];
+        $resume = [
+            'my resume' => "/downloads/Igor-Entaltsev-Web-Developer-v6.docx"
+        ];
+
         return $this->render('contact/show.html.twig', [
-            'contacts' => $contacts
+            'contacts' => $contacts,
+            'resume' => $resume
         ]);
     }
 }

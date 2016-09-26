@@ -4,7 +4,9 @@
 
 {% block body %}
     <h1>Contact info</h1>
-
+    {% for key,value in resume %}
+        <h3><a href="{{ value }}">{{ key }}</a></h3>
+    {% endfor %}
     <ul>
         {% for c in contacts %}
             <li>{{ c }}</li>
