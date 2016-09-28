@@ -1,8 +1,9 @@
+{% set myname = 'igoryen' %}
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>{% block title %}Igoryen{% endblock %}</title>
+        <title>{% block title %}{{ myname }}{% endblock %}</title>
 
         {% block stylesheets %}
             <link rel="stylesheet" href="{{ asset('vendor/bootstrap/css/bootstrap.min.css') }}">
@@ -23,7 +24,7 @@
             <div class="logo-group">
                 <a href="/">
                     <img class="logo-icon" src="{{ asset('images/me_13_round.png') }}">
-                    <h1 class="logo">Igoryen</h1>
+                    <h1 class="logo">{{ myname }}</h1>
                 </a>
             </div>
             <ul class="navi">
