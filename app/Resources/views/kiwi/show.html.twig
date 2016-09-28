@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Kiwi{% endblock %}
+{% block styles %}
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/kiwi/compiled/main.css') }}">
+{% endblock %}
+{% block scripts %}
+    <script type="text/javascript" src="{{ asset('js/jquery-2.2.3.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/kiwi/script-jq.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+    <div id="song-name-list"></div>
+    <div id="display">
+        <nav>
+            <div id="back-arrow"><img src="{{ asset('images/kiwi/arrow-back.png') }}"></div>
+            <ul id="tabs"></ul>
+        </nav>
+        <div id="tabContents"></div>
+    </div>
+{% endblock %}

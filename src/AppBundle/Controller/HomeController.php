@@ -28,7 +28,7 @@ class HomeController extends Controller
         $pointer = 'Some of my projects:';
         $links = [
             'tarboz' => 'http://tarboz.igoryen.com/',
-            'kiwi' => 'http://kiwi.igoryen.com/',
+            'kiwi' => '/kiwi',
             'maximovich' => 'http://maximovich.igoryen.com/'
         ];
         return $this->render('home/show.html.twig', [

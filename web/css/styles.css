@@ -17,7 +17,8 @@ Flexbox Layout
 }
 
 .main-content {
-    margin: 0 2%;
+    min-height: 300px;
+    margin: 0 2em;
 }
 
 .sea-creature-container {
@@ -77,18 +78,43 @@ body {
 .header {
     padding: 10px 0;
     margin: 0 auto;
-    background-color: #c2d4d8;
+    background-color: #81B9BA;
 }
 
 .logo-icon {
     height: 50px;
     width: auto;
     margin-top: 12px;
+    display: inline-block;
+    vertical-align: middle;
 }
 .logo {
-    margin-left: 1%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.logo-group {
+    margin-left: 0.5em;
+    text-decoration: none;
+}
+.logo-group a:link {
+    color: #3a3a3a;
 }
 
+/* visited link */
+.logo-group a:visited {
+    color: #3a3a3a;
+}
+
+/* mouse over link */
+.logo-group a:hover {
+    color: #3a3a3a;
+    text-decoration: none;
+}
+
+/* selected link */
+.logo-group a:active {
+    color: #3a3a3a;
+}
 .navi {
     list-style: none;
 }
@@ -150,9 +176,6 @@ body {
 /******************************
 BODY Styling
 *******************************/
-body {
-    font-family: Tahoma, Geneva, sans-serif;
-}
 .genus-photo {
     width: 200px;
     height: 200px;
@@ -657,10 +680,10 @@ FOOTER Styling
 *******************************/
 
 .footer {
-    padding: 20px;
+    padding: 10px;
     background: #E9D4B7;
-    font-size: 0.9em;
-    margin-top: 40px;
+    font-size: 1.3em;
+    margin-top: 20px;
     position: absolute;
     bottom: 0;
     width: 100%;

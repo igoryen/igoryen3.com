@@ -9,6 +9,8 @@
             <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
             <link rel="stylesheet" href="{{ asset('vendor/fontawesome/css/font-awesome.min.css') }}">
         {% endblock %}
+        {% block styles %}{% endblock %}
+        {% block scripts %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
@@ -18,8 +20,12 @@
             </form>
         </div>
         <header class="header">
-            <img class="logo-icon" src="{{ asset('images/me_13_round.png') }}">
-            <h1 class="logo">Igoryen</h1>
+            <div class="logo-group">
+                <a href="/">
+                    <img class="logo-icon" src="{{ asset('images/me_13_round.png') }}">
+                    <h1 class="logo">Igoryen</h1>
+                </a>
+            </div>
             <ul class="navi">
                 <li><a href="/">Home</a></li>
                 <li><a href="contact">Contact me</a></li>
@@ -30,11 +36,11 @@
 
         <div class="main-content">
             {% block body %}{% endblock %}
+
+
         </div>
 
-        <div class="footer">
-            <p class="footer-text">Made by igoryen</p>
-        </div>
+        {% block footer %}{% endblock %}
 
         {% block javascripts %}
             <script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
