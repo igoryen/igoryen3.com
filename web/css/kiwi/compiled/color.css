@@ -1,0 +1,81 @@
+body {
+  color: #00033;
+}
+footer {
+  color: lightgrey;
+}
+ul#tabs li a {
+  color: #a6a6a6;
+  background-color: #dedbde;
+}
+ul#tabs li a[href="#kuplet"],
+ul#tabs li a[href="#kuplet1"],
+ul#tabs li a[href="#kuplet2"],
+ul#tabs li a[href="#kuplet3"],
+ul#tabs li a[href="#kuplet4"],
+ul#tabs li a[href="#kuplet5"],
+ul#tabs li a[href="#kuplet6"],
+ul#tabs li a[href="#kuplet7"],
+ul#tabs li a[href="#pripev"],
+ul#tabs li a[href="#pripev_a"],
+ul#tabs li a[href="#pripev_b"],
+ul#tabs li a[href="#pripev1"],
+ul#tabs li a[href="#pripev2"],
+ul#tabs li a[href="#pripev3"],
+ul#tabs li a[href="#pripev4"],
+ul#tabs li a[href="#most"],
+ul#tabs li a[href="#most_a"],
+ul#tabs li a[href="#most_b"] {
+  color: #ff6666;
+}
+ul#tabs li a:hover {
+  /*background-color: #f1f0ee; */
+}
+ul#tabs li a:hover[href="#tpm"] {
+  /*background-color: @tpm-color-hover;*/
+}
+ul#tabs li a:hover[href="#lexus"] {
+  /*background-color: @lexus-color-hover;*/
+}
+ul#tabs li a:hover[href="#toyota"] {
+  /*background-color: @toyota-color-hover;*/
+}
+ul#tabs li a:hover[href="#links"] {
+  /*background-color: @links-color-hover;*/
+}
+ul#tabs li a.selected {
+  color: #000;
+  /*background-color: #f1f0ee; */
+}
+ul#tabs li a.selected[href="#tpm"] {
+  /*background-color: @tpm-color-active;*/
+}
+ul#tabs li a.selected[href="#lexus"] {
+  /*background-color: @lexus-color-active;*/
+}
+ul#tabs li a.selected[href="#toyota"] {
+  /*background-color: @toyota-color-active;*/
+}
+ul#tabs li a.selected[href="#links"] {
+  /*background-color: @links-color-active;*/
+}
+ul#tabs li a.selected[href="#kuplet"],
+ul#tabs li a.selected[href="#kuplet1"],
+ul#tabs li a.selected[href="#kuplet2"],
+ul#tabs li a.selected[href="#kuplet3"],
+ul#tabs li a.selected[href="#kuplet4"],
+ul#tabs li a.selected[href="#kuplet5"],
+ul#tabs li a.selected[href="#kuplet6"],
+ul#tabs li a.selected[href="#kuplet7"],
+ul#tabs li a.selected[href="#pripev"],
+ul#tabs li a.selected[href="#pripev_a"],
+ul#tabs li a.selected[href="#pripev_b"],
+ul#tabs li a.selected[href="#pripev1"],
+ul#tabs li a.selected[href="#pripev2"],
+ul#tabs li a.selected[href="#pripev3"],
+ul#tabs li a.selected[href="#pripev4"],
+ul#tabs li a.selected[href="#most"],
+ul#tabs li a.selected[href="#most_a"],
+ul#tabs li a.selected[href="#most_b"] {
+  color: #ff0000;
+}

@@ -1,0 +1,76 @@
+@links-color-active: #ffc6b3;
+@links-color-inactive:#ffece6;
+@links-color-hover:#ffd9cc;
+
+@blue10: #b3f0ff;
+@blue20: #ccf5ff;
+@blue30: #e6faff;
+@blue40: #faffff;
+@thinnest: 0.1px;
+
+@red50: #ff0000;
+@red70: #ff6666;
+
+
+
+body {
+	color: #00033;
+}
+
+footer {
+    color: lightgrey;
+}
+
+ul#tabs { 
+    li { 
+        a { 
+            color: #a6a6a6; 
+            background-color: #dedbde; 
+
+            &[href="#kuplet"],&[href="#kuplet1"],&[href="#kuplet2"],&[href="#kuplet3"],&[href="#kuplet4"],&[href="#kuplet5"],&[href="#kuplet6"],&[href="#kuplet7"],
+	        &[href="#pripev"],&[href="#pripev_a"],&[href="#pripev_b"],&[href="#pripev1"],&[href="#pripev2"],&[href="#pripev3"],&[href="#pripev4"],
+	        &[href="#most"],&[href="#most_a"],&[href="#most_b"]
+	        {
+	        	color: @red70;
+	        }
+            &:hover { 
+                /*background-color: #f1f0ee; */
+                &[href="#tpm"] {
+                /*background-color: @tpm-color-hover;*/
+                }
+                &[href="#lexus"] {
+                    /*background-color: @lexus-color-hover;*/
+                }
+                &[href="#toyota"] {
+                    /*background-color: @toyota-color-hover;*/
+                }
+                &[href="#links"] {
+                    /*background-color: @links-color-hover;*/
+                }
+            }
+            &.selected { 
+                color: #000; 
+                /*background-color: #f1f0ee; */
+
+                &[href="#tpm"] {
+                    /*background-color: @tpm-color-active;*/
+                }
+                &[href="#lexus"] {
+                    /*background-color: @lexus-color-active;*/
+                }
+                &[href="#toyota"] {
+                    /*background-color: @toyota-color-active;*/
+                }
+                &[href="#links"] {
+                    /*background-color: @links-color-active;*/
+                }
+                &[href="#kuplet"],&[href="#kuplet1"],&[href="#kuplet2"],&[href="#kuplet3"],&[href="#kuplet4"],&[href="#kuplet5"],&[href="#kuplet6"],&[href="#kuplet7"],
+		        &[href="#pripev"],&[href="#pripev_a"],&[href="#pripev_b"],&[href="#pripev1"],&[href="#pripev2"],&[href="#pripev3"],&[href="#pripev4"],
+		        &[href="#most"],&[href="#most_a"],&[href="#most_b"]
+		        {
+		        	color: @red50;
+		        }
+            }
+        }
+    }
+}

@@ -1,0 +1,375 @@
+@blue10: #b3f0ff;
+@blue20: #ccf5ff;
+@blue30: #e6faff;
+@blue40: #faffff;
+@thinnest: 0.1px;
+
+@tpm-color-active: #e6ffb3;
+@tpm-color-inactive: #f7ffe6;
+@tpm-color-hover: #eeffcc;
+
+@lexus-color-active: #b3b3ff;
+@lexus-color-inactive:#e6e6ff;
+@lexus-color-hover: #ccccff;
+
+@lexus-environments-color10: #e6e6ff;
+@lexus-environments-color20: #ccccff;
+@lexus-environments-color30: #b3b3ff;
+@lexus-environments-color40: #9999ff;
+
+@toyota-color-active: #b3e6ff;
+@toyota-color-inactive:#e6f7ff;
+@toyota-color-hover:#cceeff;
+
+@links-color-active: #ffc6b3;
+@links-color-inactive:#ffece6;
+@links-color-hover:#ffd9cc;
+
+
+body {
+    background: url('../img/bg_body_content.jpg');
+    background-repeat: repeat;
+}
+
+.hidden {
+    display: none;
+}
+.song-part-display {
+    .showing {
+        /*display: block;*/
+        padding: 1%;
+        border: 1px solid gray;
+    }
+}
+
+
+.song-part-nav {
+    .showing {
+        background-color: lightblue;
+        border-radius: 10px;
+        display: inline-block;
+        margin: 1%;
+        width: 15%;
+    }   
+}
+
+.verse, .chorus, .bridge {
+    display: inline-block;
+
+}
+
+.ru, .en {
+    width: 49%;
+    display: inline-block;
+    font-size: 68%;
+    text-align: center;
+}
+.attention {
+    background: yellow none repeat scroll 0% 0%;
+    color: red;
+    font-style: normal;
+    margin-left: 1%;
+}
+.song-part-nav {
+    padding: 1%;
+    margin: 1%;
+}
+
+.song-part-display {
+    padding: 1%;
+    background-color: lightblue;
+    margin: 1%;
+}
+#navigation {
+    display: inline-block;
+    width: 10%;
+}
+
+#display {
+    /*display: block;*/
+    float: right;
+    width: 90%;
+    
+}
+
+ul#tabs {
+    list-style-type: none;
+    margin: 30px 0 0 0;
+    padding: 0 0 0.3em 0;
+    li {
+        /*display: inline;*/
+        display: block;
+        /*margin: 13% 0% 13% 0%;*/
+        a {
+            color: #a6a6a6;
+            /*background-color: #dedbde;*/
+            /*border: 1px solid #c9c3ba;*/
+            /*border-bottom: none;*/
+            /*border-right: none;*/
+            /*padding: 0.3em;*/
+            text-decoration: none;
+            /*&[href="#tpm"] {
+                background-color: @tpm-color-inactive;
+            }
+            &[href="#lexus"] {
+                background-color: @lexus-color-inactive;
+            }
+            &[href="#toyota"] {
+                background-color: @toyota-color-inactive;
+            }
+            &[href="#links"] {
+                background-color: @links-color-inactive;
+            }*/
+            &:hover {
+                /*background-color: #f1f0ee; */
+                /*&[href="#tpm"] {
+                background-color: @tpm-color-hover;
+                }
+                &[href="#lexus"] {
+                    background-color: @lexus-color-hover;
+                }
+                &[href="#toyota"] {
+                    background-color: @toyota-color-hover;
+                }
+                &[href="#links"] {
+                    background-color: @links-color-hover;
+                }*/
+            }
+            &.selected {
+                color: #000;
+                /*background-color: #f1f0ee; */
+                font-weight: bold;
+                font-size: larger;
+                /*padding: 0.7em 0.3em 8px 0.3em;*/
+
+                /*&[href="#tpm"] {
+                    background-color: @tpm-color-active;
+                }
+                &[href="#lexus"] {
+                    background-color: @lexus-color-active;
+                }
+                &[href="#toyota"] {
+                    background-color: @toyota-color-active;
+                }
+                &[href="#links"] {
+                    background-color: @links-color-active;
+                }*/
+            }
+
+        }
+    }
+}
+
+div {
+    &.tabContent {
+        border: 1px solid #c9c3ba;
+        padding: 0.5em;
+        /*background-color: #f1f0ee; */
+        &#tpm {
+            background-color: @tpm-color-active;
+        }
+        &#lexus {
+            background-color: @lexus-color-active;
+        }
+        &#toyota {
+            background-color: @toyota-color-active;
+        }
+        &#links {
+            background-color: @links-color-active;
+        }
+        &.hide {
+            display: none;
+        }
+    }
+}
+    
+#jira_boards {
+    background-color: #ccffcc;
+}
+
+#lexus {
+    #environments {
+        background-color: @lexus-environments-color20;
+        #lexus_website_links {
+            background-color: @lexus-environments-color10;
+        }
+    }
+    #lexus_adhub_links {
+        background-color: @blue30;
+    }
+}
+
+    
+#toyota {
+    #environments {
+        background-color: @blue10;
+        #toyota_website_links {
+            background-color: @blue30;
+            #toyota_website_desktop {
+                background-color: @blue40;
+            }
+            #toyota_website_mobile {
+                background-color: @blue40;
+            }
+        }
+    }
+    #toyota_adhub_links {
+        background-color: @blue30;
+    }
+}
+#tpm_links {
+    background-color: #ffe6f2;
+}
+#media_check {
+    background-color: #fffae6;
+}
+#useful_links {
+    background-color: #f2e6d9;
+}
+#other {
+    background-color: #ffe6ff;
+}
+
+
+#main_container {
+    /*background-color: #eee;*/
+    font-family: "Consolas";
+    margin: auto;
+    padding: 1px 2%;
+
+    a:link {
+        text-decoration: none;
+    }
+
+    a:visited {
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+
+    a:active {
+        text-decoration: none;
+    }
+}
+
+.panel {
+    border-bottom: solid 1px #bbb;
+    border-right: solid 1px #bbb;
+    margin-top: 0.5%;
+    padding: 0.5%;
+}
+
+        .aaa {
+            /*border: outset 2px #f0f0f0;*/
+            background-color: white;
+            border-radius: 3px;
+            border-style: solid;
+            border-width: @thinnest;
+            display: inline-block;
+            padding: 0.5% 1%;
+            text-align: center;
+            width: 15%;
+        }
+        .aaa:not(.inactive):hover {
+            background-color: yellow;
+            /*border-color: yellow;*/
+            /*border-style: solid;*/
+            /*border-width: 2px;*/
+        }
+        .bbb {
+            /*border: outset 2px #f0f0f0;*/
+            background-color: white;
+            border-radius: 3px;
+            border-style: solid;
+            border-width: @thinnest;
+            display: inline-block;
+            padding: 1%;
+            text-align: center;
+            width: 7.5%;
+        }
+        .bbb:not(.inactive):hover {
+            background-color: yellow;
+            /*border-color: yellow;*/
+            /*border-style: solid;*/
+            /*border-width: 2px;*/
+        }
+        .ccc {
+            /*border: outset 2px #f0f0f0;*/
+            background-color: white;
+            border-radius: 3px;
+            border-style: solid;
+            border-width: @thinnest;
+            display: inline-block;
+            padding: 0.5% 1%;
+            text-align: center;
+            width: 15%;
+        }
+        .ccc:not(.inactive):hover {
+            background-color: yellow;
+            /*border-color: yellow;*/
+            /*border-style: solid;*/
+            /*border-width: 2px;*/
+        }
+        
+        .heading {
+            font-size: 50%;
+        }
+        .lexus {
+            background-color: #D8D8D8;
+        }
+        .adhub {
+            background-color: #CCCCFF;
+        }
+        .esales {
+            background-color: #CCFFFF;
+        }
+        .toyota {
+            background-color: #aaa;
+        }
+        .prod {
+            color: red;
+        }
+        .lp {
+            color: orange;
+        }
+        .staging {
+            color: green;
+        }
+        .head{
+            font-size: 18px;
+        }
+        .inactive {
+            background-color: lightgray;
+        }
+        .adhub_font {
+            font-family: "Arial", sans-serif;
+        }
+        .above {
+            width: 50%;
+            border-top: 2px solid red;
+        }
+        .below {
+            border-bottom: 2px solid green;
+        }
+        #eee {
+            background-color: lightblue;
+            width: 50%;
+        }
+        .heading {
+            color: gray;
+            font-size: small;
+            font-style: italic;
+        }
+
+        .hideContent {
+            overflow: hidden;
+            line-height: 1em;
+            height: 2em;
+        }
+
+        .showContent {
+            line-height: 1em;
+            height: auto;
+        }

@@ -1,0 +1,91 @@
+body {
+  background: url('images/kiwi/blue-sky-background.jpg.') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.return {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 12px;
+}
+.highlighted {
+  /*http://stackoverflow.com/questions/637921/opacity-of-background-color-but-not-the-text*/
+  /* Fallback for web browsers that don't support RGBa */
+  background-color: #000000;
+  /* RGBa with 0.2 opacity */
+  background-color: rgba(0, 0, 0, 0.2);
+  /*font-size: 1.5em;*/
+}
+#song-name-list {
+  display: block;
+}
+#song-name-list ol {
+  -moz-column-count: 3;
+  /* Firefox */
+  -moz-column-gap: 3em;
+  /* Firefox */
+  -webkit-column-count: 3;
+  /* Safari and Chrome */
+  -webkit-column-gap: 4em;
+  /* Safari and Chrome */
+  /*    -moz-columns:10px 5; /* Firefox */
+  /*    -webkit-columns:10px 5; /* Safari and Chrome */
+  /*columns:10px 5;*/
+  column-count: 3;
+  column-fill: auto;
+  column-gap: 4em;
+  /*list-style-image: url('../img/note.png');*/
+  margin: 2%;
+  padding-left: 5px;
+}
+#song-name-list li {
+  padding: 0.5em 0;
+  width: 88%;
+}
+nav {
+  /*margin: -1% 0px -4%;*/
+  margin: 0% 2% 0%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 0;
+}
+nav * {
+  display: inline-block;
+}
+#back-arrow img {
+  width: 3em;
+  vertical-align: middle;
+}
+ul#tabs {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0 0.3em 0;
+}
+ul#tabs li {
+  display: inline;
+}
+ul#tabs li a {
+  border: 1px solid #c9c3ba;
+  /*border-bottom: none; */
+  padding: 0.3em;
+}
+ul#tabs li a.selected {
+  padding: 0.7em 0.3em 8px 0.3em;
+}
+div.tabContent {
+  /*margin-top: 3%;*/
+  /*padding: 1% 5px; */
+}
+div.tabContent.hide {
+  display: none;
+}
+#back-arrow {
+  cursor: pointer;
+  display: inline-block;
+}
+#song-name-list * {
+  cursor: pointer;
+}

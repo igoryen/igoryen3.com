@@ -1,0 +1,75 @@
+@Arial: "Arial", sans-serif;
+@ArialNarrow: "ArialNarrow", sans-serif;
+
+/*@font-face {
+    font-family: arialnarrow;
+    src: url(../../fonts/arial-narrow.ttf);
+    font-weight: lighter;
+}*/
+
+#song-name-list {
+    font-family: @Arial;
+    ul {
+        font-family: @Arial;
+        font-size: 1.4em;
+    }   
+}
+
+nav {
+    * {
+        font-family: @Arial;
+    }
+}
+
+footer {
+    font-size: smaller;
+}
+div {
+    &.tabContent { 
+        /*font-size: 300%;*/
+        /*font-family: arialnarrow;*/
+        font-family: @ArialNarrow;
+        /*font-family: @Arial;*/
+        font-stretch: condensed;
+        font-size: 4.6em;
+        font-weight: bold;
+        text-align: center;
+        text-shadow: 2px 2px 5px #fff;
+        text-transform: initial;
+    }
+}
+ul#tabs { 
+    li { 
+        a { 
+            &.selected {
+                font-weight: bold; 
+                font-size: larger;
+            }
+        }
+    }
+}
+
+// remove underlines from links
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+.compact1 {
+    letter-spacing: -0.1px;
+}
+
+.compact4 {
+    letter-spacing: -0.4px;
+}
