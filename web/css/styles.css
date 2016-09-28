@@ -684,8 +684,6 @@ FOOTER Styling
     background: #E9D4B7;
     font-size: 1.3em;
     margin-top: 20px;
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 
@@ -699,4 +697,20 @@ FOOTER Styling
 
 .heart {
     color: red;
+}
+.proj_panel {
+    display: inline-block;
+    background-color: #e3e0cf;
+    float: left;
+    padding: 2%;
+    margin: 10px;
+}
+#tarboz {
+    width: 33%;
+    display: block;
+}
+#kiwi, #maximovich {
+    float: left;
+    display: block;
+    width: 60%;
 }

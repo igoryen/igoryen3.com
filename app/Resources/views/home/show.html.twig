@@ -7,16 +7,19 @@
     <h5>{{ message }}</h5>
     <h3>{{ pointer }}</h3>
 
-    <ul>
-        {% for key,value in links %}
-            <li><a href="{{ value }}">{{ key }}</a></li>
+        {% for l in links %}
+            <a href="{{ l.link }}">
+                <div id="{{ l.name | lower }}" class="proj_panel">
+                    <h3>{{ l.name }}</h3>
+                    <p>{{ l.text }}</p>
+                </div>
+            </a>
         {% endfor %}
-    </ul>
 
 {% endblock %}
 
 {% block footer %}
-    <div class="footer">
+    <footer class="footer">
         <p class="footer-text">Made by {{ myname }}</p>
-    </div>
+    </footer>
 {% endblock %}
