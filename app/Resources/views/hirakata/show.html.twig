@@ -1,0 +1,29 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hirakata {% endblock %}
+
+{% block body %}
+
+    <h1>{{ info }}</h1>
+    <h3>{{ hello }}</h3>
+    <h2>{{ newtext }}</h2>
+
+
+    {#
+    <div class="form_container">
+        <div class="form">
+            <form method="POST">
+                <input type="submit" class="button" value="Convert">
+                <textarea name="txtcomment" maxlength="2000"></textarea>
+            </form>
+        </div>
+    </div>
+    #}
+
+{% endblock %}
+
+{% block footer %}
+    <footer class="footer">
+        <p class="footer-text">Made by {{ myname }}</p>
+    </footer>
+{% endblock %}

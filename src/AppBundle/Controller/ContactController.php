@@ -17,8 +17,7 @@ use Symfony\Component\HttpFoundation\Response;
  * Class ContactController
  * @package AppBundle\Controller
  */
-class ContactController extends Controller
-{
+class ContactController extends Controller {
     /**
      * @return Response
      * @Route("/contact")
