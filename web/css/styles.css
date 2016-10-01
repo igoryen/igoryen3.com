@@ -76,7 +76,7 @@ body {
 }
 
 .header {
-    padding: 10px 0;
+    /*padding: 10px 0;*/
     margin: 0 auto;
     background-color: #c2d4d8;
 }
@@ -84,13 +84,16 @@ body {
 .logo-icon {
     height: 50px;
     width: auto;
-    margin-top: 12px;
+    /*margin-top: 12px;*/
     display: inline-block;
     vertical-align: middle;
 }
 .logo {
     display: inline-block;
     vertical-align: middle;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 1.2em;
 }
 .logo-group {
     margin-left: 0.5em;
@@ -713,4 +716,65 @@ FOOTER Styling
     float: left;
     display: block;
     width: 60%;
+}
+
+
+     /* Tooltip container */
+ .tooltip {
+     position: relative;
+     display: inline-block;
+     border-bottom: 1px dotted black; /* If you want dots under the hoverable text */
+ }
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    padding: 5px 0;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.menu-toggler {
+    background-image: url("/images/hamburger_menu_icon.png");
+    display: inline-block;
+    cursor: pointer;
+    opacity: .7;
+    filter: alpha(opacity=70);
+    width: 24px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% auto;
+    vertical-align: middle;
+}
+.page-sidebar {
+    width: 45px!important;
+    background-color: #729f98;
+    float: left;
+    /*height: 50px;*/
+    /*width: 100%;*/
+    display: none;
+}
+.page-sidebar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.page-sidebar-menu li {
+    /*display: block;*/
+    margin: 0;
+    padding: 0;
+    border: 0;
 }

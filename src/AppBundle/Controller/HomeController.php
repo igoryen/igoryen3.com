@@ -24,7 +24,7 @@ class HomeController extends Controller
      * @return \Symfony\Component\HttpFoundation\Response
      */
     public function showAction() {
-        $message = 'Website under construction by Igoryen';
+        $message =
         $pointer = 'Some of my projects:';
         $links = [
             [
@@ -44,7 +44,6 @@ class HomeController extends Controller
             ]
         ];
         return $this->render('home/show.html.twig', [
-            'message' => $message,
             'pointer' => $pointer,
             'links' => $links
         ]);

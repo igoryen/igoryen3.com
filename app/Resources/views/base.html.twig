@@ -24,9 +24,11 @@
             <div class="logo-group">
                 <a href="/">
                     <img class="logo-icon" src="{{ asset('images/me_13_round.png') }}">
-                    <h1 class="logo">{{ myname }}</h1>
+                    <div class="logo">{{ myname }}</div>
                 </a>
+                <div class="menu-toggler sidebar-toggler"></div>
             </div>
+
             <ul class="navi">
                 <li><a href="/">Home</a></li>
                 <li><a href="contact">Contact me</a></li>
@@ -34,8 +36,20 @@
                 <li><a href="#">Login</a></li>
             </ul>
         </header>
+        {#
+        <div class="page-sidebar-wrapper">
+            <div class="page-sidebar navbar-collapse">
+                <ul class="page-sidebar-menu page-sidebar-menu-closed">
+                    <li>li 1</li>
+                    <li>li 2</li>
+                    <li>li 3</li>
+                </ul>
+            </div>
+        </div>
+        #}
 
         <div class="main-content">
+
             {% block body %}{% endblock %}
 
 
