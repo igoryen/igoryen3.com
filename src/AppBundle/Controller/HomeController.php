@@ -17,8 +17,7 @@ use Symfony\Component\HttpFoundation\Response;
  * Class HomeController
  * @package AppBundle\Controller
  */
-class HomeController extends Controller
-{
+class HomeController extends Controller {
     /**
      * @Route("/")
      * @return \Symfony\Component\HttpFoundation\Response
@@ -34,13 +33,18 @@ class HomeController extends Controller
             ],
             [
                 "name" => "Kiwi",
-                "link"=> "/kiwi",
-                "text"=> "Since 2016 - a front end application using CSS, JavaScript, jQuery, HTML. Created at the request of a local church who needed an application for singing songs. It eliminates the use of an Power Point presentation, allows to quickly choose the song to sing, and within the song to choose which part of the song to sing and in which language to sing it."
+                "link" => "/kiwi",
+                "text" => "Since 2016 - a front end application using CSS, JavaScript, jQuery, HTML. Created at the request of a local church who needed an application for singing songs. It eliminates the use of an Power Point presentation, allows to quickly choose the song to sing, and within the song to choose which part of the song to sing and in which language to sing it."
             ],
             [
-                "name"=> "Maximovich",
-                "link"=> "http://maximovich.igoryen.com/",
-                "text"=> "Since 2016 - A converter from the modern Ukrainian orthography to the system that is inspired by the system made by the Russian scientist Mikhail Maximovich (1804 — 1873), who wanted to use the traditional spelling but use diacritics to show the changed pronunciation. The goal is to help the Russian speakers to read Ukrainian."
+                "name" => "Maximovich",
+                "link" => "http://maximovich.igoryen.com/",
+                "text" => "Since 2016 - A converter from the modern Ukrainian orthography to the system that is inspired by the system made by the Russian scientist Mikhail Maximovich (1804 — 1873), who wanted to use the traditional spelling but use diacritics to show the changed pronunciation. The goal is to help the Russian speakers to read Ukrainian."
+            ],
+            [
+                "name" => "Hirakata",
+                "link" => "/hirakata",
+                "text" => "Helps learn Hiragana (and Katakana WIP) by substituting them for syllables in the English text input by the user."
             ]
         ];
         return $this->render('home/show.html.twig', [
