@@ -4,14 +4,9 @@
 
 {% block body %}
 
-    {{ form_start(form) }}
-    {{ form_widget(form) }}
-    {{ form_end(form) }}
-    {% if content is defined %}
-        <div class="ready_text">
-            {{ content }}
-        </div>
 
+    {% if content is defined %}
+        {{ content }}
     {% endif %}
 
 {% endblock %}

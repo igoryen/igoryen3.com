@@ -8,8 +8,8 @@
     <h3>{{ pointer }}</h3>
 
         {% for l in links %}
-            <a href="{{ l.link }}">
-                <div id="{{ l.name | lower }}" class="proj_panel">
+            <a class="project" id="{{ l.name | lower }}" href="{{ l.link }}">
+                <div class="project_content" >
                     <h3>{{ l.name }}</h3>
                     <p>{{ l.text }}</p>
                 </div>

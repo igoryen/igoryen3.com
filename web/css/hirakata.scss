@@ -1,0 +1,69 @@
+textarea#form_content {
+  width: 100%;
+  height: 100px;
+  display: block;
+}
+
+.ready_text {
+  font-size: 1.5em;
+}
+
+.highlighted {
+  color: blue;
+}
+
+#form_hiragana {
+  label {
+    margin: 0 20px 0 5px;
+  }
+}
+
+//label {
+//  &.required {
+//    margin-top: 1%;
+//  }
+//}
+
+#form_hiragana {
+
+  input[type="checkbox"] {
+    vertical-align: baseline;
+    //width: 40px;
+    //height: 40px;
+    //background: #ddd;
+    //margin: 10px 20px;
+    &:hover {
+      cursor: pointer;
+      //box-shadow: 0px 1px 3px #FFFF66;;
+    }
+    &:checked + label {
+      //background: #26ca28;
+      background: #87CEFA;
+      color: black;
+    }
+    &:hover + label {
+      background: #FFFF66;
+      cursor: pointer;
+      color: black;
+    }
+    &:checked:hover + label {
+      background: #87CEFA;
+    }
+  }
+  label {
+    color: slategray ;
+    &.required {
+      //color: dodgerblue;
+    }
+  }
+}
+
+//transition: all .5s ease;
+//cursor: pointer;
+////position: absolute;
+//top: 5px;
+//left: 5px;
+//z-index: 1;
+//
+////background: #333;
+//box-shadow:inset 0px 1px 3px rgba(0,0,0,0.5);

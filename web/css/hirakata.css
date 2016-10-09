@@ -1,0 +1,31 @@
+textarea#form_content {
+  width: 100%;
+  height: 100px;
+  display: block; }
+
+.ready_text {
+  font-size: 1.5em; }
+
+.highlighted {
+  color: blue; }
+
+#form_hiragana label {
+  margin: 0 20px 0 5px; }
+
+#form_hiragana input[type="checkbox"] {
+  vertical-align: baseline; }
+  #form_hiragana input[type="checkbox"]:hover {
+    cursor: pointer; }
+  #form_hiragana input[type="checkbox"]:checked + label {
+    background: #87CEFA;
+    color: black; }
+  #form_hiragana input[type="checkbox"]:hover + label {
+    background: #FFFF66;
+    cursor: pointer;
+    color: black; }
+  #form_hiragana input[type="checkbox"]:checked:hover + label {
+    background: #87CEFA; }
+#form_hiragana label {
+  color: slategray; }
+
+/*# sourceMappingURL=hirakata.css.map */

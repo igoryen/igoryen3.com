@@ -30,7 +30,7 @@ class HomeController extends Controller
             [
                 'name' => 'Tarboz',
                 'link' => 'http://tarboz.igoryen.com/',
-                'text' => 'Since 2014 - an online interactive phrase-book developed using Waterfall methodology through all the SDLC stages. Used OOP, built classes and models, modeled the database using PHP, LAMP, JavaScript, Ajax, Bing translation service, jQuery, HTML, CSS. It is an online dictionary of modern winged phrases - phrases from movies, songs, jokes and their international equivalents (in good litterary translation form). Contains notes on the meaning and usage as well as a link to a video when available. '
+                'text' => 'Since 2014 - an online interactive phrase-book developed using Waterfall methodology through all the SDLC stages. PHP, LAMP, JavaScript, Ajax, Bing translation service, jQuery, HTML, CSS. It is an online dictionary of modern winged phrases - phrases from movies, songs, jokes and their international equivalents (in good litterary translation form). '
             ],
             [
                 "name" => "Kiwi",
