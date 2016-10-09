@@ -39,7 +39,7 @@ class HirakataController extends Controller {
         $hk = $this->get('app.hirakata');
         $tp = $this->get('app.text_processor');
 
-        $text = "Raccoon, Cacoo";
+        //$text = "Raccoon, Cacoo";
         $old = "coo";
         $new = "く";
 
@@ -49,7 +49,7 @@ class HirakataController extends Controller {
         $c = new Content();
 
 
-        $c->setContent($text);
+        $c->setContent("");
 //        $task->setTask('Write a blog post');
 //        $task->setDueDate(new \DateTime('tomorrow'));
         $textarea_placeholder = "(1) Paste an English text here, (2) pick desired substitutions, (3) press 'Convert text'.";
