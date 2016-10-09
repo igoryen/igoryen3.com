@@ -28,7 +28,7 @@ class ContactController extends Controller {
             '647-703-6200'
         ];
         $resume = [
-            'my resume' => "/downloads/Igor-Entaltsev-Web-Developer-v6.docx"
+            'my resume' => "/downloads/Igor-Entaltsev-Web-Developer-v8.docx"
         ];
 
         return $this->render('contact/show.html.twig', [
