@@ -44,7 +44,7 @@ class HomeController extends Controller {
             [
                 "name" => "Hirakata",
                 "link" => "/hirakata",
-                "text" => "Helps learn Hiragana (and Katakana WIP) by substituting them for syllables in the English text input by the user."
+                "text" => "Helps learn the Japanese syllabaries (Hiragana and (WIP) Katakana) by substituting them for syllables in the English text input by the user."
             ]
         ];
         return $this->render('home/show.html.twig', [
