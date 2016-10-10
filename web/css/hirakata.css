@@ -2,14 +2,25 @@ textarea#form_content {
   width: 100%;
   display: block; }
 
+button#form_save {
+  color: darkgray;
+  text-shadow: 1px 1px white;
+  width: 25%;
+  padding: 0.5%;
+  font-size: 1.5em;
+  margin: 1% 0; }
+
 .ready_text {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  font-family: Georgia, "Times New Roman", Times, serif; }
 
 .highlighted {
   color: blue; }
 
 #form_hiragana label {
-  margin: 0 20px 0 5px; }
+  margin: 0 20px 0 5px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: unset; }
 
 #form_hiragana input[type="checkbox"] {
   vertical-align: baseline; }
@@ -29,6 +40,11 @@ textarea#form_content {
 
 @media only screen and (max-width: 1280px) {
   label {
-    font-size: 1.3em; } }
+    font-size: 1.3em; }
+
+  button#form_save {
+    width: 100%;
+    padding: 1%;
+    margin: 6% 0; } }
 
 /*# sourceMappingURL=hirakata.css.map */

@@ -64,8 +64,8 @@
       <file leaf-file-name="hirakata.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/css/hirakata.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+            <state relative-caret-position="376">
+              <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -574,12 +574,12 @@
       <workItem from="1474758811294" duration="5418000" />
       <workItem from="1474828653821" duration="44781000" />
       <workItem from="1475944414197" duration="7002000" />
-      <workItem from="1475955275652" duration="39573000" />
+      <workItem from="1475955275652" duration="41048000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="97838000" />
+    <option name="totallyTimeSpent" value="99313000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="10" y="19" width="1346" height="699" extended-state="0" />
@@ -999,8 +999,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/css/hirakata.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="71" column="21" selection-start-line="71" selection-start-column="21" selection-end-line="71" selection-end-column="21" />
+        <state relative-caret-position="376">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
           <folding />
         </state>
       </provider>
