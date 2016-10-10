@@ -27,4 +27,8 @@ textarea#form_content {
 #form_hiragana label {
   color: slategray; }
 
+@media only screen and (max-width: 1280px) {
+  label {
+    font-size: 1.3em; } }
+
 /*# sourceMappingURL=hirakata.css.map */
